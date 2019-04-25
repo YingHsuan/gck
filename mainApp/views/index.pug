@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  table
+    each value, index in result
+      if index === 0 || index === 5
+        tr
+          each i in value
+              th= i
+      else
+        tr
+          each v in value
+              td= v
