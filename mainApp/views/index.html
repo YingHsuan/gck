@@ -1,14 +1,14 @@
 <table>
-    <% result.forEach((value, index) => { %>
-    <% if (index === 0 || index === 5) { %>
+    <% result.forEach(function(value, index){ %>
+    <% if (index == 0 || index == 5) { %>
     <tr>
-        <% value.forEach((i) => { %>
+        <% value.forEach(function(i) { %>
         <th><%= i %></th>
         <% }) %>
     </tr>
     <% } else { %>
     <tr>
-        <% value.forEach((v) => { %>
+        <% value.forEach(function(v) { %>
         <td><%= v %></td>
         <% }) %>
     </tr>
