@@ -1,0 +1,18 @@
+<table>
+    <% result.forEach((value, index) => { %>
+    <% if (index === 0 || index === 5) { %>
+    <tr>
+        <% value.forEach((i) => { %>
+        <th><%= i %></th>
+        <% }) %>
+    </tr>
+    <% } else { %>
+    <tr>
+        <% value.forEach((v) => { %>
+        <td><%= v %></td>
+        <% }) %>
+    </tr>
+    <% } %>
+    <% }) %>
+
+</table>
